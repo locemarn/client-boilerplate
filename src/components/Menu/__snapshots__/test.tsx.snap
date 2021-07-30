@@ -1,13 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Menu /> should render the menu 1`] = `
-.c2 {
+.c3 {
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
 }
 
-.c13 {
+.c12 {
+  background: linear-gradient(180deg,#ff5f5f 0%,#f062c0 50%);
+  color: #FAFAFA;
+  border: 0;
+  cursor: pointer;
+  border-radius: 0.4rem;
+  padding: 0.8rem;
+  height: 4rem;
+  font-size: 1.4rem;
+  padding: 0.8rem 3.2rem;
+}
+
+.c16 {
   background: linear-gradient(180deg,#ff5f5f 0%,#f062c0 50%);
   color: #FAFAFA;
   border: 0;
@@ -20,10 +32,18 @@ exports[`<Menu /> should render the menu 1`] = `
   width: 100%;
 }
 
-.c4 {
+.c5 {
   color: #FAFAFA;
   width: 11rem;
   height: 3.3rem;
+}
+
+.c1 {
+  display: none;
+}
+
+.c6 {
+  display: none;
 }
 
 .c0 {
@@ -39,14 +59,14 @@ exports[`<Menu /> should render the menu 1`] = `
   position: relative;
 }
 
-.c1 {
+.c2 {
   color: #FAFAFA;
+  cursor: pointer;
   width: 2.4rem;
   height: 2.4rem;
-  cursor: pointer;
 }
 
-.c5 {
+.c11 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -65,7 +85,7 @@ exports[`<Menu /> should render the menu 1`] = `
   align-items: center;
 }
 
-.c5 > div {
+.c11 > div {
   margin-left: 1.6rem;
 }
 
@@ -89,7 +109,7 @@ exports[`<Menu /> should render the menu 1`] = `
   animation: hoverAnimation 0.2s forwards;
 }
 
-.c6 {
+.c13 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -108,14 +128,14 @@ exports[`<Menu /> should render the menu 1`] = `
   left: 0;
   right: 0;
   height: 100vh;
+  overflow: hidden;
   -webkit-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out;
-  overflow: hidden;
   opacity: 0;
   pointer-events: none;
 }
 
-.c6 > svg {
+.c13 > svg {
   position: absolute;
   top: 0;
   right: 0;
@@ -125,7 +145,7 @@ exports[`<Menu /> should render the menu 1`] = `
   height: 2.4rem;
 }
 
-.c6 .c7 {
+.c13 .c7 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -146,7 +166,7 @@ exports[`<Menu /> should render the menu 1`] = `
   flex-direction: column;
 }
 
-.c6 .c9 {
+.c13 .c9 {
   color: #030517;
   font-weight: 600;
   font-size: 2.0rem;
@@ -159,7 +179,7 @@ exports[`<Menu /> should render the menu 1`] = `
   transition: transform 0.3s ease-in-out;
 }
 
-.c6 .c11 {
+.c13 .c14 {
   -webkit-transform: translateY(3rem);
   -ms-transform: translateY(3rem);
   transform: translateY(3rem);
@@ -168,7 +188,7 @@ exports[`<Menu /> should render the menu 1`] = `
   transition: transform 0.3s ease-in-out;
 }
 
-.c12 {
+.c15 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -183,13 +203,13 @@ exports[`<Menu /> should render the menu 1`] = `
   padding: 0 4.8rem 4.8rem;
 }
 
-.c12 > span {
+.c15 > span {
   display: block;
   margin: 0.8rem 0;
   font-size: 1.2rem;
 }
 
-.c14 {
+.c17 {
   -webkit-text-decoration: none;
   text-decoration: none;
   color: #F231A5;
@@ -197,34 +217,46 @@ exports[`<Menu /> should render the menu 1`] = `
 }
 
 @media (max-width:768px) {
-  .c4 {
+  .c5 {
     width: 5.8rem;
     height: 4.5rem;
   }
 
-  .c4 svg {
+  .c5 svg {
     height: 4.5rem;
     pointer-events: none;
   }
 
-  .c4 .text {
+  .c5 .text {
     display: none;
   }
 }
 
 @media (max-width:768px) {
-  .c3 {
+  .c1 {
+    display: block;
+  }
+}
+
+@media (min-width:768px) {
+  .c6 {
+    display: block;
+  }
+}
+
+@media (max-width:768px) {
+  .c4 {
     position: absolute;
     left: 50%;
-    -webkit-transform: translate(-50%);
-    -ms-transform: translate(-50%);
-    transform: translate(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
   }
 }
 
 @media (min-width:768px) {
   .c8 {
-    magin-left: 2.4rem;
+    margin-left: 2.4rem;
   }
 }
 
@@ -234,29 +266,33 @@ exports[`<Menu /> should render the menu 1`] = `
   <div
     class="c1"
   >
-    <svg
-      aria-hidden="true"
-      aria-label="Open Menu"
+    <div
       class="c2"
-      fill="currentColor"
-      focusable="false"
-      viewBox="0 0 24 24"
-      xmlns="http://www.w3.org/2000/svg"
     >
-      <path
-        d="M0 0h24v24H0z"
-        fill="none"
-      />
-      <path
-        d="M3 4h18v2H3V4zm0 7h12v2H3v-2zm0 7h18v2H3v-2z"
-      />
-    </svg>
+      <svg
+        aria-hidden="true"
+        aria-label="Open Menu"
+        class="c3"
+        fill="currentColor"
+        focusable="false"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+        <path
+          d="M3 4h18v2H3V4zm0 7h12v2H3v-2zm0 7h18v2H3v-2z"
+        />
+      </svg>
+    </div>
   </div>
   <div
-    class="c3"
+    class="c4"
   >
     <div
-      class="c4"
+      class="c5"
       color="white"
     >
       <svg
@@ -343,15 +379,35 @@ exports[`<Menu /> should render the menu 1`] = `
     </div>
   </div>
   <div
-    class="c5"
+    class="c6"
   >
     <div
-      class="c1"
+      class="c7 c8"
+    >
+      <a
+        class="c9 c10"
+        href="#"
+      >
+        Home
+      </a>
+      <a
+        class="c9 c10"
+        href="#"
+      >
+        Explore
+      </a>
+    </div>
+  </div>
+  <div
+    class="c11"
+  >
+    <div
+      class="c2"
     >
       <svg
         aria-hidden="true"
         aria-label="Search"
-        class="c2"
+        class="c3"
         fill="currentColor"
         focusable="false"
         viewBox="0 0 24 24"
@@ -367,12 +423,12 @@ exports[`<Menu /> should render the menu 1`] = `
       </svg>
     </div>
     <div
-      class="c1"
+      class="c2"
     >
       <svg
         aria-hidden="true"
         aria-label="Open Shopping Cart"
-        class="c2"
+        class="c3"
         fill="currentColor"
         focusable="false"
         viewBox="0 0 24 24"
@@ -387,15 +443,26 @@ exports[`<Menu /> should render the menu 1`] = `
         />
       </svg>
     </div>
+    <div
+      class="c6"
+    >
+      <button
+        class="c12"
+      >
+        <span>
+          Sign in
+        </span>
+      </button>
+    </div>
   </div>
   <nav
     aria-hidden="true"
-    class="c6"
+    class="c13"
   >
     <svg
       aria-hidden="true"
       aria-label="Close Menu"
-      class="c2"
+      class="c3"
       fill="currentColor"
       focusable="false"
       viewBox="0 0 24 24"
@@ -426,10 +493,10 @@ exports[`<Menu /> should render the menu 1`] = `
       </a>
     </div>
     <div
-      class="c11 c12"
+      class="c14 c15"
     >
       <button
-        class="c13"
+        class="c16"
       >
         <span>
           Log in now
@@ -439,7 +506,7 @@ exports[`<Menu /> should render the menu 1`] = `
         or
       </span>
       <a
-        class="c14"
+        class="c17"
         href="#"
         title="Sign Up"
       >
